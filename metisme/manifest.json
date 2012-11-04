@@ -1,0 +1,20 @@
+{
+  "name": "this is a simple email attachment app",
+  "version": "1.0",
+  "background": { },
+   "permissions": [
+    "*://mail.google.com/"
+  ],
+   "content_scripts": [
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": [
+        "jquery.min.js",
+        "script.js"
+    ]}],
+  "browser_action": {
+    "name": "A Simple Email attachment app",
+    "icons": ["icon.png"]
+  },
+  "manifest_version": 2
+}
